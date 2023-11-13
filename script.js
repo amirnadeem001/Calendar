@@ -61,9 +61,6 @@ const renderCalendar = (month, year) => {
       const html3 = `<li class="cursor-pointer text-gray-300">${i}</li>`;
       document.querySelector('.dates').insertAdjacentHTML('beforeend', html3);
     }
-    // if ()) {
-    //   console.log("yessss");
-    // }
   }
 
   // Display the next month dates
