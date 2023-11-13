@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="flex justify-center items-center p-12 bg-black">
+    <div class="calendar bg-black w-[45rem] h-auto rounded-md border-2">
+      <!-- Header Of the calender -->
+      <header
+        class="header flex justify-between p-4 border-b-2 border-gray-400"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="w-8 h-8 cursor-pointer prev_year"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="w-8 h-8 cursor-pointer prev_month"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+
+        <div class="head-dates"></div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="w-8 h-8 cursor-pointer next_month"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="w-8 h-8 next_year cursor-pointer"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </header>
+      <!-- Day Names of the Months -->
+      <div class="daysOfMonth p-4 font-semibold text-center">
+        <ul class="daysName grid grid-cols-7 justify-around gap-12 flex-wrap">
+          <li class="cursor-pointer text-white">Sun</li>
+          <li class="cursor-pointer text-white">Mon</li>
+          <li class="cursor-pointer text-white">Tue</li>
+          <li class="cursor-pointer text-white">Wed</li>
+          <li class="cursor-pointer text-white">Thu</li>
+          <li class="cursor-pointer text-white">Fri</li>
+          <li class="cursor-pointer text-white">Sat</li>
+        </ul>
+        <ul
+          class="dates grid grid-cols-7 justify-around gap-16 pt-10 flex-wrap"
+        ></ul>
+      </div>
+    </div>
+  </body>
+</html>
